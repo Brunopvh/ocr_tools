@@ -29,3 +29,23 @@ Este projeto é contém uma interface gráfica em Python Tk para minipular e edi
 # Instalação do Tesseract Linux
     Debian/Ubuntu sudo apt install tesseract-ocr
 
+# Execução do APP 
+    Linux:
+        - instaler os pacotes: Tk, VirtualEnv e Python3 
+        sudo apt install python3 python3-venv python3-tk
+
+        - Abra a pasta raiz deste projeto e crie uma venv local
+        chmod +x add_venv.sh && ./add_venv.sh
+
+        - Execute o APP
+        ./app.sh
+
+    Windows:
+        - Instale o python3.11 ou superior
+        
+        - Instale as dependências
+        pip.exe install -r requirements.txt
+
+        - Execute o APP
+        python.exe main.py
+
