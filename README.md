@@ -1,13 +1,10 @@
-# office ocr
+# OCR Tool
 
 Este projeto é contém uma interface gráfica em Python Tk para minipular e editar documentos (imagens e PDFs).
 
 - Combinar arquivos PDFs (Unir e dividir)
 - Converter imagem em PDF(s)
 - Extrair textos de imagens e PDFs
-
-# Dependência externa - Tesseract para extrair texto das imagens 
-    https://github.com/tesseract-ocr/tesseract
 
 # Módulos python externos
     PyPDF2      - (para manipulação de arquivos/bytes em PDF)
@@ -25,3 +22,10 @@ Este projeto é contém uma interface gráfica em Python Tk para minipular e edi
 
 # Instalação do módulos
     pip install PyPDF2 pdf2image PyMuPDF reportlab openpyxl pandas Pillow pytesseract opencv-python clipboard tqdm pyinstaller
+
+# Insalação do Tesseract Windows - baixe o instalador na página do projeto.
+    https://github.com/tesseract-ocr/tesseract/releases
+
+# Instalação do Tesseract Linux
+    Debian/Ubuntu sudo apt install tesseract-ocr
+

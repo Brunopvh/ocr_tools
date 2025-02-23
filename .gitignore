@@ -1,0 +1,7 @@
+libconvert/doc_pdf/__pycache__/
+libconvert/docpdf/__pycache__/
+libconvert/ocr/__pycache__/
+libconvert/sheets/__pycache__/
+libconvert/utils/__pycache__/
+libconvert/__pycache__/
+gui/__pycache__/
