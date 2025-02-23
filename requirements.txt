@@ -1,0 +1,12 @@
+PyPDF2
+pdf2image
+PyMuPDF
+reportlab
+openpyxl
+pandas
+Pillow
+pytesseract
+opencv-python
+clipboard
+tqdm
+pyinstaller
