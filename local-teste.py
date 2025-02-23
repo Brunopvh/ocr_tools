@@ -11,11 +11,7 @@ from libconvert import *
 from libconvert.common import get_path_tesseract_system
 
 def main():
-    text = 'RUBRICA E MATRICULA DO DESTINATARIO- DANIELA PEREIRA DA SILVA ENTREGADOR UC- 1396768 TOI- 152211439'
-    idx = text.find('UC')
-    print(idx)
-    text = text[idx:-1]
-    print(text)
+    pass
 
     
 main()

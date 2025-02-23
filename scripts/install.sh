@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 #--------------------------------------------------#
-# Installer Load Images - V 202-01-31
+# Installer OCR Tools - 2025-02-23
 #--------------------------------------------------#
 
 [[ -z "$HOME" ]] && HOME=~/
@@ -10,10 +10,16 @@ THIS_FILE=$(readlink -f $0)
 THIS_DIR=$(dirname $THIS_FILE)
 DIR_ROOT=$(dirname $THIS_DIR)
 
-INSTALL_DIR="${HOME}/var/opt/load-images"
+
+_APPNAME='GUI OCR Tools'
+_APPCLI='ocrtools'
+
+# Arquivos e diretórios
+INSTALL_DIR="${HOME}/var/opt/$_APPCLI"
 FILE_MAIN="${INSTALL_DIR}/app.sh"
-FILE_BIN="${HOME}/bin/load-images"
-FILE_DESKTOP="${HOME}/.local/share/applications/load-images.desktop"
+FILE_BIN="${HOME}/bin/$_APPCLI"
+FILE_DESKTOP="${HOME}/.local/share/applications/${_APPCLI}.desktop"
+
 
 function create_dirs(){
 	mkdir -p "$INSTALL_DIR"
@@ -26,7 +32,7 @@ function add_file_desktop(){
 
 	echo '[Desktop Entry]' > "$FILE_DESKTOP"
 	{
-		echo -e "Name=Load Images"
+		echo -e "Name=$_APPNAME"
 		echo -e "Exec=${FILE_MAIN}";
 		echo 'Terminal=false';
 		echo 'Type=Application';

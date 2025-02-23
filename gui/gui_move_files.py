@@ -128,7 +128,7 @@ class PageMoveFiles(AppPage):
         # label 1
         self._labelInputText1 = ttk.Label(
             self._containerInput1,
-            text='Texto padrão',
+            text='Texto padrão do arquivo',
         )
         self._labelInputText1.pack(side=tk.LEFT, expand=True, fill='both', padx=self.__padx, pady=self.__pady)
         # Caixa de texto 1
@@ -145,7 +145,7 @@ class PageMoveFiles(AppPage):
         # Label 2
         self._labelInputText2 = ttk.Label(
             self._containerInput2,
-            text='Incluir texto padrão'
+            text='Adicionar texto padrão'
         )
         self._labelInputText2.pack(side=tk.LEFT, expand=True, fill='both', padx=self.__padx, pady=self.__pady)
         # Caixa de texto 2
@@ -402,7 +402,7 @@ class PageMoveFiles(AppPage):
 
     def set_size_screen(self):
         self.parent.geometry("645x300")
-        self.parent.title(f"OCR Tool")
+        self.parent.title(f"OCR Tool - Mover arquivos")
 
     def update_state(self):
         pass

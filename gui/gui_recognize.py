@@ -311,7 +311,7 @@ class PageRecognizePDF(AppPage):
         self.controller.to_page('/home')
 
     def set_size_screen(self):
-        self.parent.geometry("625x260")
+        self.parent.geometry("640x255")
         self.parent.title(f"OCR Tool - Reconhecer Texto em PDFs")
 
     def update_state(self):
@@ -634,7 +634,7 @@ class PageRecognizeImages(AppPage):
         self.controller.to_page('/home')
 
     def set_size_screen(self):
-        self.parent.geometry("625x260")
+        self.parent.geometry("640x255")
         self.parent.title(f"OCR Tool - Reconhecer Texto em Imagens")
 
     def update_state(self):
