@@ -273,13 +273,24 @@ class PageMoveFiles(AppPage):
                 _list_new_names.append('-')
                 _list_status.append('N')
             else:
+                # Apagar caracteres indesejados do nome de arquivo.
+                new_name = FormatString(
+                    new_name
+                ).replace_bad_chars(
+                ).replace_all(
+                    '/'
+                ).replace_all(
+                    ' ', '_'
+                ).to_upper().value[0:55]
+                
+                # Adicionar extensão do arquivo.
+                origi_file = File(df['ARQUIVO'][i])
+                new_name = f'{new_name}{origi_file.extension()}'  
                 _list_new_names.append(
-                    FormatString(new_name)
-                    .replace_bad_chars()
-                    .replace_all('/').replace_all(' ', '_')
-                    .to_upper().value[0:55]
+                   new_name 
                 )
                 _list_status.append('SIM')
+        #
         df['NOVO_ARQUIVO'] = _list_new_names
         df['MOVER'] = _list_status
         self.stop_pbar()
